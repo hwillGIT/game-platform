@@ -1,6 +1,8 @@
 # Specification Coverage Map
 
 > Checkpoint through Q569 plus the post-Q569 engagement-design correction.
+>
+> This is the canonical coverage map. It incorporates the later engagement-design revisions and supersedes earlier, more conservative interpretations of streaks, urgency, randomized rewards, promotion intensity, claim/reveal UX, and replay momentum.
 
 This document groups the discovery decisions by specification domain so coverage gaps are visible before analysis/design begins.
 
@@ -9,6 +11,8 @@ This document groups the discovery decisions by specification domain so coverage
 | Product vision & positioning | Deep | 21+ U.S.-first, multi-game, premium gaming + fintech, one umbrella brand, social/prize/sweepstakes focus |
 | Player experience & core features | Deep | Home, Play Now, discovery, search, favorites, recent play, events, profiles, notifications, post-match, loyalty |
 | UI/UX & interaction design | Deep | High-fidelity redesign, responsive web + native-feeling mobile, immersion-first play, standardized post-match, design tokens |
+| Engagement & retention design | Deep | Streaks, challenges, replay momentum, real urgency/scarcity, reward suspense/reveals, seasonal progression, social proof, adaptive re-engagement |
+| Truthful risk/value presentation | Deep | Protected truth layer, fintech-grade clarity at consequential decisions, expressive gaming presentation during play/outcome, truthful odds/value/prize state |
 | Gameplay model | Deep | Skill/chance/hybrid, sync/async, real-time, single active session, practice, pause/reconnect/AFK rules |
 | Matchmaking | Deep | Soft preferences, transparent relaxation, crossplay, ranked/MMR, placements, latency, anti-smurf |
 | Competitive integrity | Deep | Server-authoritative outcomes/RNG/timing, replay logs, hidden pre-commit opponent identity, post-match enforcement |
@@ -25,7 +29,7 @@ This document groups the discovery decisions by specification domain so coverage
 | Reputation | Strong | Public simple signals, internal deep scoring, host/player reliability, abandonment and moderation history |
 | Case management / support | Deep | Unified cases, evidence, SLA/escalation, human override, support observation, no impersonation |
 | Game economies | Deep | Separate economies, currencies, source/sink, budgets, conversion controls, reward tables, circuit breakers |
-| Loyalty & rewards | Strong | Platform-wide layer, tenant-specific default, streaks/referrals/challenges/VIP, corrected engagement design |
+| Loyalty & rewards | Deep | Platform-wide layer, tenant-specific default, streaks/referrals/challenges/VIP, reveal rituals, corrected engagement treatment |
 | Inventory & entitlements | Deep | Cosmetics, passes, tickets, consumables, time-limited, bound, tradable, provenance |
 | Marketplace / trading | Strong | Listings, explicit fees, price history, anti-wash trading, trade confirmation, review holds |
 | Blockchain / digital assets | Strong/optional | Native ownership primary, optional NFT/on-chain/token/smart contract support |
@@ -34,6 +38,7 @@ This document groups the discovery decisions by specification domain so coverage
 | Notifications & communications | Deep | In-app, push, email, SMS; channel preferences, gameplay suppression, marketing separation |
 | AI features & governance | Deep | Bots, coaching, moderation, fraud, personalization, AI registry/evaluation/drift/gateway/kill switches |
 | Analytics & telemetry | Deep | Common taxonomy, metric governance, OpenTelemetry correlation, data quality and experimentation controls |
+| Experimentation & growth optimization | Deep | A/B testing of CTAs, streak framing, urgency, reward intensity, social proof, motion/haptics, replay prompts, progression pacing; protected factual fundamentals excluded |
 | Privacy & data governance | Deep | Retention classes, delete/export, minimization, privacy orchestration, protected verified identity |
 | Game SDK / plugin model | Deep | Standard lifecycle, capability manifest, semver, browser isolation, Unity/Unreal parity |
 | Developer certification | Deep | Private managed onboarding, sandbox, conformance, performance/security/integrity evidence, recertification |
@@ -49,19 +54,39 @@ This document groups the discovery decisions by specification domain so coverage
 | Search & recommendations | Strong | Tenant-scoped search, privacy constraints, trust-weighted ranking, exploration and sponsored-label separation |
 | Business / commercial model | Strong | Hybrid subscription+usage, MAU core metric, tenant/studio economics, explicit marketplace fees |
 | Brand strategy | Strong | Independent abstract/ownable brand, premium gaming + fintech, white-label architecture |
-| High-fidelity design system | Strong | Hierarchy, typography/numeric treatment, protected semantic status, HUD/overlay, token governance |
+| High-fidelity design system | Deep | Hierarchy, typography/numeric treatment, protected semantic status, HUD/overlay, token governance, truth/presentation layering |
 | Requirements traceability | Strong | Domain/risk/owner/design/API/test/certification links, Specified→Designed→Implemented→Verified |
 
 ## Cross-cutting principles
 
 1. **Best practice is the default.** Deviation requires a concrete reason.
-2. **Adversarial review is two-sided.** Prevent abuse and deception without unnecessarily reducing fun or conversion.
-3. **Simple surface, complex underside.** Players should not need to understand orchestration, policy engines or reconciliation.
-4. **Coordination before play; authority during play; transparency after play.**
-5. **Player identity can be flexible; authority and accountability remain durable.**
-6. **Anything configurable has bounds; anything powerful has scope; anything consequential is reproducible.**
-7. **Authoritative truth is narrow and hard to bypass; derived views may be cached/personalized/eventually consistent.**
-8. **Design for maximum legitimate engagement. Truthfulness—not emotional intensity—is the boundary.**
+2. **Adversarial review is two-sided.** Prevent abuse and deception without unnecessarily reducing fun, conversion, competition, appropriate risk-taking, or commercial performance.
+3. **Design for maximum legitimate engagement.** Truthfulness—not emotional intensity—is the boundary.
+4. **Protect truth; free the presentation.** Platform truth semantics remain protected while games/tenants may use highly expressive presentation.
+5. **Friction is proportional to consequence.** Avoid unnecessary confirmation and compliance-like interruption.
+6. **Simple surface, complex underside.** Players should not need to understand orchestration, policy engines or reconciliation.
+7. **Coordination before play; authority during play; transparency after play.**
+8. **Player identity can be flexible; authority and accountability remain durable.**
+9. **Anything configurable has bounds; anything powerful has scope; anything consequential is reproducible.**
+10. **Authoritative truth is narrow and hard to bypass; derived views may be cached/personalized/eventually consistent.**
+
+## Engagement correction incorporated into coverage
+
+Earlier requirements that could be read as overly conservative have been superseded:
+
+- **Challenges/missions:** deliberate retention and re-engagement systems.
+- **Streaks:** may create real continuity pressure and loss aversion when rules are genuine.
+- **Countdowns:** real deadlines should be strongly emphasized.
+- **Scarcity:** genuine scarcity should feel scarce.
+- **Season passes/progression:** should actively create anticipation and continued-play motivation.
+- **Randomized rewards:** dramatic suspense/reveal/rarity treatment is encouraged if odds and outcomes remain truthful.
+- **Session design:** optimize Result → Reward → Progression → Next Opportunity → Play Again.
+- **Promotion frequency:** adaptive relevance/fatigue management is preferred over simplistic blanket caps.
+- **Claim/reveal UX:** authoritative grant occurs first, but theatrical reveal remains encouraged.
+- **Experimentation:** engagement psychology is an explicit optimization surface.
+- **Gaming + fintech:** fintech-grade clarity at commitment; premium-gaming-grade emotion during play/outcome.
+- **Confirmations:** avoid unnecessary friction for reversible/low-consequence actions.
+- **Economy UI:** protected truth layer + expressive presentation layer.
 
 ## Remaining thin areas
 
