@@ -1,7 +1,5 @@
 # Discovery Interview — Normalized Record
 
-> Checkpoint through Question 569, plus the engagement-design correction that followed.
->
 > Status: discovery interview is still in progress. **Do not begin the Cryptan/competitor teardown, architecture selection, high-fidelity redesign, or coded prototype until the user explicitly says go.**
 
 ## Primary reference
@@ -394,9 +392,7 @@ First-class domains include: Identity, Tenant, Social, Game Catalog, Match/Sessi
 - Design tokens are shared between Figma and code with primitive → semantic → component → tenant alias layers.
 - Tenant branding modifies approved tokens/content, not protected security/compliance/integrity structure.
 
-## Engagement-design correction — supersedes earlier conservative language
-
-This is a critical correction made after Q569.
+## Engagement design
 
 ### Governing rule
 
@@ -404,7 +400,7 @@ This is a critical correction made after Q569.
 
 The platform is a game platform, not a compliance interface. Safeguards preserve truth, integrity and player agency; they do not suppress emotional game design.
 
-### Revised decisions
+### Design requirements
 
 - **Challenges/missions:** use daily, weekly, seasonal, event-based and escalating challenges as retention/re-engagement systems.
 - **Streaks:** may deliberately create continuity pressure and loss aversion; genuine broken streaks may reset. Streak rules must be real and disclosed.
@@ -444,18 +440,6 @@ A design fails if it fails either side.
 - Public developer portal excluded.
 - Generic item lending/rental marketplace excluded.
 - Detailed cap-table/fundraising model excluded.
-
-## Interview coverage by range
-
-- **Q1–Q127:** product scope, audience, multi-game platform, compliance boundary, multi-tenancy, SDK, operations, business and brand scope.
-- **Q128–Q159:** executive-deliverable framing and transition back into product UX; home/discovery/social decisions.
-- **Q160–Q229:** crossplay, leaderboards, rooms, tournaments, onboarding, profiles, rewards, marketplace and player UX.
-- **Q230–Q329:** AI, practice, sessions, trust, abuse, social controls, tenant transitions and mobile/browser behavior.
-- **Q330–Q409:** SDK lifecycle, APIs, data/domain boundaries, RBAC, economy safety, observability, resilience, compliance, live ops and prototype contracts.
-- **Q410–Q489:** security architecture, key/secrets, supply chain, incident response, recovery, AI governance, design tokens, analytics and requirements traceability.
-- **Q490–Q529:** testing strategy, FinOps, search/recommendation integrity, support operations and certification evidence.
-- **Q530–Q569:** high-fidelity visual standards and commercial/tenant economics.
-- **Post-Q569 correction:** engagement design revised to maximize legitimate excitement and retention while preserving truthful economic/competitive representation.
 
 ## What happens after go
 

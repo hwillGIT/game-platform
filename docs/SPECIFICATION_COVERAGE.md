@@ -1,8 +1,8 @@
 # Specification Coverage Map
 
-> Checkpoint through Q569 plus the post-Q569 engagement-design correction.
+> Canonical specification coverage.
 >
-> This is the canonical coverage map. It incorporates the later engagement-design revisions and supersedes earlier, more conservative interpretations of streaks, urgency, randomized rewards, promotion intensity, claim/reveal UX, and replay momentum.
+> This map summarizes coverage across the platform's product, design, and engineering domains.
 
 This document groups the discovery decisions by specification domain so coverage gaps are visible before analysis/design begins.
 
@@ -70,9 +70,7 @@ This document groups the discovery decisions by specification domain so coverage
 9. **Anything configurable has bounds; anything powerful has scope; anything consequential is reproducible.**
 10. **Authoritative truth is narrow and hard to bypass; derived views may be cached/personalized/eventually consistent.**
 
-## Engagement correction incorporated into coverage
-
-Earlier requirements that could be read as overly conservative have been superseded:
+## Engagement design requirements
 
 - **Challenges/missions:** deliberate retention and re-engagement systems.
 - **Streaks:** may create real continuity pressure and loss aversion when rules are genuine.
@@ -90,7 +88,7 @@ Earlier requirements that could be read as overly conservative have been superse
 
 ## Remaining thin areas
 
-Coverage is now broad and deep. Remaining work is less about missing platform categories and more about turning the specification into concrete design/implementation artifacts after **go**:
+Remaining work focuses on turning the specification into concrete design and implementation artifacts after **go**:
 
 - Exact technical-stack recommendation derived from Figma/competitor/workload research.
 - Exact data schemas and API definitions, beyond the contract principles already established.

@@ -1,8 +1,8 @@
 # Design and Decision Principles
 
-> Governing principles extracted from the discovery interview through Q569 and the subsequent engagement-design correction.
+> Principles governing the platform specification.
 >
-> This is the canonical principles document. Where earlier interview wording conflicts with these principles, this document governs.
+> These principles govern product, design, and engineering decisions throughout the platform.
 
 ## 1. Best practice is the default
 
